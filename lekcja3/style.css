@@ -1,0 +1,86 @@
+/* === Reset i zmienne === */
+*, *::before, ::after {
+  box-sizing: border-box
+}
+
+:root {
+  --color-primary: #ffffff;
+  --color-accent: #ffffff;
+  --color-highlight: #ffc107;
+  --color-bg: #000000;
+  --color-text: #e1e9ed;
+  --color-border: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #323d49;
+  color: var(--color-text);
+}
+
+/* TODO: stylowanie karty gracza */
+
+.player-card {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 3px solid var(--color-primary);
+  background: var(--color-bg);
+}
+
+.card-header {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--color-accent);
+  text-align: center;
+}
+
+.card-section{
+  padding: 15px;
+  margin-bottom: 1px solid var(--color-border);
+  border-bottom: 8px;
+  border-radius: 8px;
+}
+
+.card-footer{
+  padding: 10px;
+  border-top: 2px solid var(--color-accent);
+  text-align: center;
+  font-size: 0,85em;
+}
+
+.hightlight{
+  color: var(--color-highlight);
+  font-weight: bold;
+}
+
+.card-section h2 {
+  margin-bottom: 10px;
+  color: var(--color-accent)
+}
+
+.bio {
+  border-left: 2px solid #ffffff
+}
+.equipment {
+  border-left: 2px solid #ffffff
+}
+.achivements {
+  border-left: 2px solid #ffffff
+}
+
+.card-section ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.card-section li {
+  padding: 5px 0;
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.card-section li:last-child {
+  border-bottom: none;
+}
